@@ -1,13 +1,14 @@
 Summary:	intel2gas is a x86 assembly source converter
 Name:		intel2gas
-Version:	1.3.2
+Version:	1.3.3
 Release:	1
 License:	GPL
 Group:		Development/Tools
+Group(de):	Entwicklung/Werkzeuge
 Group(fr):	Development/Outils
 Group(pl):	Programowanie/Narzêdzia
 Source0:	http://www.niksula.cs.hut.fi/~mtiihone/intel2gas/%{name}-%{version}.tar.gz
-Patch0:		intel2gas-DESTDIR.patch
+Patch0:		%{name}-DESTDIR.patch
 URL:		http://www.niksula.cs.hut.fi/~mtiihone/intel2gas/
 BuildRequires:	libstdc++-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -22,9 +23,7 @@ build them.
 %patch -p1
 
 %build
-LDFLAGS="-s"
 CXXFLAGS="$RPM_OPT_FLAGS -fno-rtti -fno-exceptions -fno-implicit-templates"
-export LDFLAGS CXXFLAGS
 %configure
 %{__make}
 
