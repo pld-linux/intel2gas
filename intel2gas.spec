@@ -6,6 +6,7 @@ Release:	5
 License:	GPL
 Group:		Development/Tools
 Source0:	http://www.niksula.cs.hut.fi/~mtiihone/intel2gas/%{name}-%{version}.tar.gz
+# Source0-md5:	40c85d961f6214903d80dc7f233a2c6f
 Source1:	%{name}.1
 Patch0:		%{name}-DESTDIR.patch
 URL:		http://www.niksula.cs.hut.fi/~mtiihone/intel2gas/
