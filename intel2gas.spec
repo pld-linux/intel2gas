@@ -20,7 +20,7 @@ build them.
 
 %description -l pl
 Ten program konwertuje pliki ¼ród³owe w asemblerze ze sk³adni NASM do
-gas lub odrotnie.
+gas lub odwrotnie.
 
 %prep
 %setup -q
