@@ -23,7 +23,7 @@ build them.
 %patch -p1
 
 %build
-CXXFLAGS="$RPM_OPT_FLAGS -fno-rtti -fno-exceptions -fno-implicit-templates"
+CXXFLAGS="%{rpmcflags} -fno-rtti -fno-exceptions -fno-implicit-templates"
 %configure
 %{__make}
 
