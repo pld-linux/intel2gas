@@ -26,7 +26,7 @@ LDFLAGS="-s"
 CXXFLAGS="$RPM_OPT_FLAGS -fno-rtti -fno-exceptions -fno-implicit-templates"
 export LDFLAGS CXXFLAGS
 %configure
-make
+%{__make}
 
 %install
 rm -rf $RPM_BUILD_ROOT
