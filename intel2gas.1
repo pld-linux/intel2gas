@@ -1,0 +1,63 @@
+.TH INTEL2GAS 1
+.\" NAME should be all caps, SECTION should be 1-8, maybe w/ subsection
+.\" other parms are allowed: see man(7), man(1)
+.SH NAME
+intel2gas \- convert between NASM assembly and GAS assembly language
+.SH SYNOPSIS
+.B intel2gas
+.I "[-higmtcIdV] [-o outfile] [infile]"
+.br
+.SH "DESCRIPTION"
+This manual page documents briefly the
+.BR intel2gas
+command.
+This manual page was written for the Debian GNU/Linux distribution
+because the original program does not have a manual page.
+.PP
+.B intel2gas
+is a small text parser that can convert assembler source written in NASM
+syntax to gas syntax. And nowadays more often also the other way.
+.SH OPTIONS
+.TP
+.B \-h
+Show summary of options.
+.TP
+.B \-i
+convert from intel to at&t format (default)
+.TP
+.B \-g
+convert from at&t to intel format
+.TP
+.B \-m
+convert from masm to at&t format
+.TP
+.B \-t
+convert from tasm to at&t format
+.TP
+.B \-c
+understand C style comments
+.TP
+.B \-I
+convert inline assembler (intel to at&t only)
+.TP
+.B \-d
+output all % chars as %%
+.TP
+.B \-V
+show version
+.SH ENVIRONMENT
+.TP
+.B I2G_DATA
+should indicate the location of the syntax files if they are not installed
+in the default location. The value should be a path to the directory with
+the subdirectories g2i, i2g and m2g.
+.SH FILES
+.TP
+.B /usr/share/intel2gas/{g2i,i2g,m2g}/*
+syntaxfiles for the translation.
+.SH "SEE ALSO"
+There is some other documentation available in the files README, INSTALL and DATAFILES which reside in /usr/share/doc/intel2gas.
+.SH AUTHORS
+The author of the program is Mikko Tiihonen <mikko.tiihonen@hut.fi>.
+This manual page was written by Alexander Zangerl <az@snafu.priv.at>,
+for the Debian GNU/Linux system (but may be used by others).
