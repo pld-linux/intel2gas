@@ -38,11 +38,9 @@ rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_mandir}/man1
 install %{SOURCE1} $RPM_BUILD_ROOT%{_mandir}/man1
 
-gzip -9nf BUGS ChangeLog DATAFILES README THANKS TODO
-
 %files
 %defattr(644,root,root,755)
-%doc *.gz
+%doc BUGS ChangeLog DATAFILES README THANKS TODO
 %attr(755,root,root) %{_bindir}/intel2gas
 %{_datadir}/intel2gas
 %{_mandir}/man1/intel2gas.1*
