@@ -1,7 +1,7 @@
 Summary:	intel2gas is a x86 assembly source converter
 Name:		intel2gas
 Version:	1.3.3
-Release:	2
+Release:	3
 License:	GPL
 Group:		Development/Tools
 Group(de):	Entwicklung/Werkzeuge
@@ -24,7 +24,7 @@ build them.
 
 %build
 CXXFLAGS="%{rpmcflags} -fno-rtti -fno-exceptions -fno-implicit-templates"
-%configure
+%configure2_13
 %{__make}
 
 %install
