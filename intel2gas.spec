@@ -2,7 +2,7 @@ Summary:	intel2gas is a x86 assembly source converter
 Summary(pl):	Konwerter kodu ¼ród³owego w asemblerze x86
 Name:		intel2gas
 Version:	1.3.3
-Release:	6
+Release:	7
 License:	GPL
 Group:		Development/Tools
 Source0:	http://www.niksula.cs.hut.fi/~mtiihone/intel2gas/%{name}-%{version}.tar.gz
