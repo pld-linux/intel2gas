@@ -30,7 +30,7 @@ make
 
 %install
 rm -rf $RPM_BUILD_ROOT
-make install \
+%{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
 gzip -9nf BUGS ChangeLog DATAFILES README THANKS TODO
