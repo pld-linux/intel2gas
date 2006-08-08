@@ -24,7 +24,7 @@ gas lub odwrotnie.
 
 %prep
 %setup -q
-%patch -p1
+%patch0 -p1
 
 %build
 CXXFLAGS="%{rpmcflags} -fno-rtti -fno-exceptions -fno-implicit-templates"
