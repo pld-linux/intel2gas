@@ -1,5 +1,5 @@
 Summary:	intel2gas is a x86 assembly source converter
-Summary(pl):	Konwerter kodu ºrÛd≥owego w asemblerze x86
+Summary(pl.UTF-8):   Konwerter kodu ≈∫r√≥d≈Çowego w asemblerze x86
 Name:		intel2gas
 Version:	1.3.3
 Release:	7
@@ -18,8 +18,8 @@ This program converts your assembly source files from NASM to gas or
 the other way around so you don't have to have the other assembler to
 build them.
 
-%description -l pl
-Ten program konwertuje pliki ºrÛd≥owe w asemblerze ze sk≥adni NASM do
+%description -l pl.UTF-8
+Ten program konwertuje pliki ≈∫r√≥d≈Çowe w asemblerze ze sk≈Çadni NASM do
 gas lub odwrotnie.
 
 %prep
